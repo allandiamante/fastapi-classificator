@@ -19,7 +19,7 @@ class Item(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"Calcula possibilidade do paciente ter diabetes: Mande um POST para url/calc/ contendo as variaveis EX:'{Pregnancies: 3,   Glucose: 10,    BloodPressure: 13.3,    SkinThickness: 303,    Insulin: 55,    BMI: 205.5,    DiabetesPedigreeFunction: 0.11,    Age: 22 }'"}
+    return {"Calcula possibilidade do paciente ter diabetes: Mande um POST para url/calc/ contendo as 8 variaveis EX:'{Pregnancies: 3,   Glucose: 10,    BloodPressure: 13.3,    SkinThickness: 303,    Insulin: 55,    BMI: 205.5,    DiabetesPedigreeFunction: 0.11,    Age: 22 }'"}
 
 
 @app.post("/calc/")
